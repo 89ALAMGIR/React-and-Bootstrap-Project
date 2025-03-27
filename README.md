@@ -1,6 +1,6 @@
 # React & Bootstrap Project  
 
-**Author:** (Md Alamgir Hossain)  
+**Author:** Md Alamgir Hossain
 
 ## 📌 Project Overview  
 This project is built using **React** for the frontend and **Bootstrap** for styling. It leverages React's component-based architecture to create a dynamic and interactive user interface while utilizing Bootstrap's responsive design framework for a sleek and modern look.  

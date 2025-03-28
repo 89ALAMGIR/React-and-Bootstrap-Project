@@ -3,6 +3,7 @@ import Display from "./Display";
 const App = () => {
   return (
     <>
+      {/* This is a fragment */}
       <h1>
         This is anothere component
         <Display />

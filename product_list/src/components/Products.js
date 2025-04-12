@@ -1,12 +1,23 @@
 import React from "react";
-// import '../style.css;'
+// import '../style.css;'//
 
-const Products = ({ name, price, image }) => {
+
+const Products = ({ name, price, image, description }) => {
+  const showDescription = ()=>{
+    alert(description);
+  };
+  
   return (
-    <div>
-      <img src={image} alt={name} width="200" />
-      <h2>Product Name: {name}</h2>
-      <h3 className="price">Price: {price} TK</h3>
+    <div className="card h-100">
+      <img src={image} alt={name} className="card-image-top p-4" />
+      <div className="card-body d-flex flex-column">
+        <h2 className="card-title">Product Name: {name}</h2>
+        <p className="card-text">{description}</p>
+        <b className="card-text mt-auto">Price: {price} TK</b>
+        <button className="btn btn-primary mt-auto" onClick={showDescription}>
+          Show Description
+        </button>
+      </div>
     </div>
   );
 };

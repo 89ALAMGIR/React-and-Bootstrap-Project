@@ -3,12 +3,11 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <>
-      <h1>This is header</h1>
-      <h2>Product List</h2>
-            <p>Check The Product</p>
+    <div className="text-center mt-2">
+      <h1>Product List</h1>
+            <p>Checkout Our Products</p>
 
-    </>
+    </div>
   )
 }
 

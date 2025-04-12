@@ -5,9 +5,16 @@ import products from "./data/products";
 const ProductList = () => {
   return (
     <div>
-      {products.map((product) => (
-        <Products key={product.id} {...product} />
-      ))}
+      <div className="container">
+        <div className="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-3">
+          {products.map((product) => (
+            <div className="col">
+              {" "}
+              <Products key={product.id} {...product} />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
